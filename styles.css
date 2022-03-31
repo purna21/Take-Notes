@@ -1,20 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
 
     font-size: 62.5%;
 }
 
-body{
+body {
     background: #E5E5E5;
-    
+
 }
 
-.title-bar{
+.title-bar {
     width: 100vw;
     height: 50px;
     margin: 0px auto 10px auto;
@@ -23,14 +23,14 @@ body{
     box-shadow: 0 2px 8px 0px rgba(134, 134, 139, 0.663);
 }
 
-.title-bar h2{
+.title-bar h2 {
     text-align: center;
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
 }
 
-.overall-container{
+.overall-container {
 
     display: flex;
     flex-direction: column;
@@ -40,10 +40,10 @@ body{
     /* height: 85vh; */
     width: 100%;
     padding: 30px;
-    
+
 }
 
-.overall-container .task-container{
+.overall-container .task-container {
 
     display: flex;
     align-items: center;
@@ -54,27 +54,29 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
     word-break: normal;
-    
+
 }
 
-.overall-container .task-container .input-box{
+.overall-container .task-container .input-box {
 
     width: 100%;
     height: 100%;
     margin-right: 20px;
 }
 
-.overall-container .task-container .input-box:hover{
+.overall-container .task-container .input-box:hover {
 
     border-bottom: 1.2px solid #002945;
 }
 
-.overall-container .task-container .input-box textarea{
+.overall-container .task-container .input-box textarea {
 
     width: 100%;
     height: 100%;
     padding: 10px 5px 5px 10px;
-    word-wrap: normal;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-break: normal;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -83,7 +85,8 @@ body{
 
 }
 
-.overall-container .task-container a:link, a:visited{
+.overall-container .task-container a:link,
+a:visited {
 
     text-decoration: none;
     text-align: center;
@@ -98,14 +101,14 @@ body{
 
 }
 
-.overall-container .task-container a:hover{
+.overall-container .task-container a:hover {
 
     transform: translateY(-1px);
     box-shadow: 0px 1px 3px rgba(70, 70, 75, 0.863);
     background: #034769;
 }
 
-.overall-container .task-container a:active{
+.overall-container .task-container a:active {
 
     transform: translateY(0);
     box-shadow: 0px 0px 0px rgba(70, 70, 75, 0.863);
@@ -114,8 +117,8 @@ body{
 
 
 
-.overall-container .note-container{
-   
+.overall-container .note-container {
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -124,7 +127,7 @@ body{
     align-content: flex-start;
 }
 
-.overall-container .note-container .notebox{
+.overall-container .note-container .notebox {
 
     width: 250px;
     padding: 20px;
@@ -138,14 +141,14 @@ body{
 
 }
 
-.overall-container .note-container .notebox:hover{
+.overall-container .note-container .notebox:hover {
 
     transform: translateY(-2px);
     outline: 1px solid #bfc1c2;
 }
 
-.overall-container .note-container .notebox .delete-box{
-    
+.overall-container .note-container .notebox .delete-box {
+
     position: absolute;
     top: 0;
     right: 0;
@@ -160,8 +163,8 @@ body{
 
 
 
-.overall-container .note-container .notebox .delete-box:hover{
-    
+.overall-container .note-container .notebox .delete-box:hover {
+
     position: absolute;
     top: 0;
     right: 0;
@@ -178,30 +181,30 @@ body{
 
 /* ****Media Queries**** */
 
-@media screen and (min-width: 1713px ){
+@media screen and (min-width: 1713px) {
 
-    .overall-container .task-container{
+    .overall-container .task-container {
         width: 50%;
         overflow-x: hidden;
         overflow-y: auto;
         word-break: normal;
     }
-} 
+}
 
-@media screen and (max-width: 976px ){
+@media screen and (max-width: 976px) {
 
-    .overall-container .task-container{
+    .overall-container .task-container {
         width: 55%;
         overflow-x: hidden;
         overflow-y: auto;
         word-break: normal;
     }
-} 
+}
 
 
-@media screen and (max-width: 721px ){
+@media screen and (max-width: 721px) {
 
-    .overall-container .task-container{
+    .overall-container .task-container {
         width: 65%;
         overflow-x: hidden;
         overflow-y: auto;
@@ -209,9 +212,9 @@ body{
     }
 }
 
-@media screen and (max-width: 600px ){
+@media screen and (max-width: 600px) {
 
-    .overall-container .task-container{
+    .overall-container .task-container {
         width: inherit;
         overflow-x: hidden;
         overflow-y: auto;
@@ -220,9 +223,9 @@ body{
 }
 
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 376px) {
 
-    .overall-container .task-container{
+    .overall-container .task-container {
         width: inherit;
         overflow-x: hidden;
         overflow-y: auto;
@@ -230,24 +233,12 @@ body{
     }
 }
 
-@media screen and (max-width: 280px){
+@media screen and (max-width: 280px) {
 
-    .overall-container .task-container{
+    .overall-container .task-container {
         width: max-content;
         overflow-x: hidden;
         overflow-y: auto;
         word-break: normal;
     }
-}  
-
-
-
-
-
-
-
-
-
-
-
-
+}
