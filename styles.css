@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+    font-size: 62.5%;
+}
+
+body{
+    background: #E5E5E5;
+    
+}
+
+.title-bar{
+    width: 100vw;
+    height: 50px;
+    margin: 0px auto 10px auto;
+    padding: 15px;
+    background: #003652;
+    box-shadow: 0 2px 8px 0px rgba(134, 134, 139, 0.663);
+}
+
+.title-bar h2{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.overall-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* height: 95vh; */
+    /* height: 85vh; */
+    width: 100%;
+    padding: 30px;
+    
+}
+
+.overall-container .task-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 50px;
+    margin: 30px 0px 40px 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-break: normal;
+    
+}
+
+.overall-container .task-container .input-box{
+
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.overall-container .task-container .input-box:hover{
+
+    border-bottom: 1.2px solid #002945;
+}
+
+.overall-container .task-container .input-box textarea{
+
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px 5px 10px;
+    word-wrap: normal;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+
+}
+
+.overall-container .task-container a:link, a:visited{
+
+    text-decoration: none;
+    text-align: center;
+    /* height: 97%; */
+    /* width: 40%; */
+    padding: 15px;
+    color: #E5E5E5;
+    background: #003652;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.2s;
+
+}
+
+.overall-container .task-container a:hover{
+
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 3px rgba(70, 70, 75, 0.863);
+    background: #034769;
+}
+
+.overall-container .task-container a:active{
+
+    transform: translateY(0);
+    box-shadow: 0px 0px 0px rgba(70, 70, 75, 0.863);
+    background: rgb(24, 24, 206);
+}
+
+
+
+.overall-container .note-container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: flex-start;
+}
+
+.overall-container .note-container .notebox{
+
+    width: 250px;
+    padding: 20px;
+    background: #dfdbdb;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    color: rgb(56, 54, 54);
+    transition: all 0.2s;
+    position: relative;
+    word-wrap: break-word;
+
+}
+
+.overall-container .note-container .notebox:hover{
+
+    transform: translateY(-2px);
+    outline: 1px solid #bfc1c2;
+}
+
+.overall-container .note-container .notebox .delete-box{
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 19px;
+    text-align: center;
+    background: #f1efef;
+    border-radius: 1px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.overall-container .note-container .notebox .delete-box:hover{
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: 'Delete';
+    width: 50px;
+    height: 19px;
+    text-align: center;
+    background: #e20f0f;
+    color: white;
+}
+
+
+
+
+/* ****Media Queries**** */
+
+@media screen and (min-width: 1713px ){
+
+    .overall-container .task-container{
+        width: 50%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        word-break: normal;
+    }
+} 
+
+@media screen and (max-width: 976px ){
+
+    .overall-container .task-container{
+        width: 55%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        word-break: normal;
+    }
+} 
+
+
+@media screen and (max-width: 721px ){
+
+    .overall-container .task-container{
+        width: 65%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        word-break: normal;
+    }
+}
+
+@media screen and (max-width: 600px ){
+
+    .overall-container .task-container{
+        width: inherit;
+        overflow-x: hidden;
+        overflow-y: auto;
+        word-break: normal;
+    }
+}
+
+
+@media screen and (max-width: 376px){
+
+    .overall-container .task-container{
+        width: inherit;
+        overflow-x: hidden;
+        overflow-y: auto;
+        word-break: normal;
+    }
+}
+
+@media screen and (max-width: 280px){
+
+    .overall-container .task-container{
+        width: max-content;
+        overflow-x: hidden;
+        overflow-y: auto;
+        word-break: normal;
+    }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
